@@ -10,16 +10,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-
-  <div id="download-btn" class="download-button">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-      <polyline points="7 10 12 15 17 10"/>
-      <line x1="12" y1="15" x2="12" y2="3"/>
-    </svg>
-  </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40">
+          <circle cx="20" cy="20" r="18" fill="#4a9f5d"/>
+          <path d="M20 8 C15 8 10 20 20 32 C30 20 25 8 20 8" fill="#2e7a41"/>
+        </svg>
+        <span>NaturalLife</span>
+      </div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
+    <section class="hero">
+      <h1>Productos Naturales para tu Bienestar</h1>
+      <p>Descubre nuestra selección de suplementos y medicamentos naturales</p>
+    </section>
 
     <section id="productos" class="productos">
       <h2>Nuestros Productos</h2>
@@ -55,9 +68,28 @@
       </div>
     </section>
   </main>
-  <div id="portada" style="display: none;">
-    <img src="imagen/portada.png" alt="Portada" style="width: 100%; height: 100%;">
-  </div>
+
+  <button class="download-pdf-button" id="downloadPdf" title="Descargar PDF">
+    <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>
+  </button>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>NaturalLife</h3>
+        <p>Tu bienestar es nuestra prioridad</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: info@naturallife.com</p>
+        <p>Tel: (123) 456-7890</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="products.js"></script>
   <script src="app.js"></script>
